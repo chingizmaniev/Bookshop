@@ -22,7 +22,7 @@ import ProductsContextProvider from './contexts/ProductsContext';
 const Routes = () => {
     return (
         <div>
-            <BrowserRouter baseUrl="/Bookshop-React">
+            <BrowserRouter baseUrl="https://chingizmaniev.github.io/Bookshop/">
                 <ProductsContextProvider>
                     <Switch>
                         <Route exact path="/body" component={Body} />
