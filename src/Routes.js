@@ -25,15 +25,15 @@ const Routes = () => {
             <BrowserRouter>
                 <ProductsContextProvider>
                     <Switch>
-                        <Route exact path="/body" component={Body} />
+                        <Route component={Body} />
                         <Route exact path="/product-details:id" component={ProductDetails} />
                         <Route exact path="/" component={Home} />
                         <Route exact path="/cart" component={Cart} />
-                        <Route exact path="/favorites" component={Favorites}/>
+                        <Route exact path="/favorites" component={Favorites} />
                         <Route exact path="/products-list" component={ProductsList} />
-                        <Route exact path="/header" component={Header}/>
-                        <Route exact path="/pagination" component={Pagination}/>
-                        <Navibar/>
+                        <Route exact path="/header" component={Header} />
+                        <Route exact path="/pagination" component={Pagination} />
+                        <Navibar />
                     </Switch>
                 </ProductsContextProvider>
                 <AdminContextProvider>
