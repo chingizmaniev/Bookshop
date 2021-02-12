@@ -35,6 +35,7 @@ const Routes = () => {
                             <Route exact path="/header" component={Header} />
                             <Route exact path="/pagination" component={Pagination} />
                             <Navibar />
+                            <Body />
                         </Switch>
                     </ProductsContextProvider>
                     <AdminContextProvider>
