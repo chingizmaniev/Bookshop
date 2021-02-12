@@ -29,7 +29,7 @@ const Routes = () => {
                     <Switch>
                         <Route exact path="/body" component={Body} />
                         <Route exact path="/product-details:id" component={ProductDetails} />
-                        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+                        <Route exact path="/" component={Home} />
                         <Route exact path="/cart" component={Cart} />
                         <Route exact path="/favorites" component={Favorites} />
                         <Route exact path="/products-list" component={ProductsList} />
