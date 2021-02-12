@@ -19,7 +19,7 @@ import AdminContextProvider from './contexts/AdminContext';
 import AuthContextProvider from './contexts/AuthContext';
 import ProductsContextProvider from './contexts/ProductsContext';
 
-ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, document.getElementById('root'));
+// ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, document.getElementById('root'));
 
 const Routes = () => {
     return (
@@ -29,7 +29,7 @@ const Routes = () => {
                     <Switch>
                         <Route exact path="/body" component={Body} />
                         <Route exact path="/product-details:id" component={ProductDetails} />
-                        <Route exact path={`/`} render={(routerProps) => < Home routerProps={routerProps} />} />
+                        <Route exact path={process.env.PUBLIC_URL + '/'} />
                         <Route exact path="/cart" component={Cart} />
                         <Route exact path="/favorites" component={Favorites} />
                         <Route exact path="/products-list" component={ProductsList} />
