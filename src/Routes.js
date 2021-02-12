@@ -21,38 +21,40 @@ import ProductsContextProvider from './contexts/ProductsContext';
 
 const Routes = () => {
     return (
-        <div>
-            <BrowserRouter>
-                <ProductsContextProvider>
-                    <Switch>
-                        <Route exact path="/body" component={Body} />
-                        <Route exact path="/product-details:id" component={ProductDetails} />
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/cart" component={Cart} />
-                        <Route exact path="/favorites" component={Favorites} />
-                        <Route exact path="/products-list" component={ProductsList} />
-                        <Route exact path="/header" component={Header} />
-                        <Route exact path="/pagination" component={Pagination} />
-                        <Navibar />
-                    </Switch>
-                </ProductsContextProvider>
-                <AdminContextProvider>
-                    <Switch>
-                        <Route exact path="/admin-panel-add" component={AdminPanelAdd} />
-                        <Route exact path="/admin-panel" component={AdminPanel} />
-                        <Route exact path="/admin-panel-edit" component={AdminPanelEdit} />
-                    </Switch>
-                </AdminContextProvider>
-                <AuthContextProvider>
-                    <Switch>
-                        <Route exact path="/footer" component={Footer} />
-                        <Route exact path="/signin" component={SignIn} />
-                        <Route exact path="/signup" component={SignUp} />
-                    </Switch>
-                </AuthContextProvider>
-                <Footer />
-            </BrowserRouter>
-        </div>
+        <HashRouter>
+            <div>
+                <BrowserRouter basename='/'>
+                    <ProductsContextProvider>
+                        <Switch>
+                            <Route exact path="/body" component={Body} />
+                            <Route exact path="/product-details:id" component={ProductDetails} />
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/cart" component={Cart} />
+                            <Route exact path="/favorites" component={Favorites} />
+                            <Route exact path="/products-list" component={ProductsList} />
+                            <Route exact path="/header" component={Header} />
+                            <Route exact path="/pagination" component={Pagination} />
+                            <Navibar />
+                        </Switch>
+                    </ProductsContextProvider>
+                    <AdminContextProvider>
+                        <Switch>
+                            <Route exact path="/admin-panel-add" component={AdminPanelAdd} />
+                            <Route exact path="/admin-panel" component={AdminPanel} />
+                            <Route exact path="/admin-panel-edit" component={AdminPanelEdit} />
+                        </Switch>
+                    </AdminContextProvider>
+                    <AuthContextProvider>
+                        <Switch>
+                            <Route exact path="/footer" component={Footer} />
+                            <Route exact path="/signin" component={SignIn} />
+                            <Route exact path="/signup" component={SignUp} />
+                        </Switch>
+                    </AuthContextProvider>
+                    <Footer />
+                </BrowserRouter>
+            </div>
+        </HashRouter>
     );
 };
 
