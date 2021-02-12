@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+
+ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>< App /></Router>, document.getElementById(‘root’));
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <App />,
   document.getElementById('root')
 );
