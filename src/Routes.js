@@ -35,7 +35,6 @@ const Routes = () => {
                             <Route exact path="/header" component={Header} />
                             <Route exact path="/pagination" component={Pagination} />
                             <Navibar />
-                            <Body />
                         </Switch>
                     </ProductsContextProvider>
                     <AdminContextProvider>
@@ -58,8 +57,5 @@ const Routes = () => {
         </HashRouter>
     );
 };
-
-const Home = () => <div><h2>Home</h2></div>
-const Body = () => <div><h2>About</h2></div>
 
 export default Routes;
