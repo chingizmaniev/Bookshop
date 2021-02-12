@@ -24,12 +24,12 @@ import ProductsContextProvider from './contexts/ProductsContext';
 const Routes = () => {
     return (
         <div>
-            <BrowserRouter >
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <ProductsContextProvider>
                     <Switch>
                         <Route exact path="/body" component={Body} />
                         <Route exact path="/product-details:id" component={ProductDetails} />
-                        <Route exact path={process.env.PUBLIC_URL + '/'} />
+                        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
                         <Route exact path="/cart" component={Cart} />
                         <Route exact path="/favorites" component={Favorites} />
                         <Route exact path="/products-list" component={ProductsList} />
