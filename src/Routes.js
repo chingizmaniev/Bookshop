@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom';
 import AdminPanel from './container/AdminPanel/AdminPanel';
 import AdminPanelAdd from './container/AdminPanel/AdminPanelAdd';
 import AdminPanelEdit from './container/AdminPanel/AdminPanelEdit';
