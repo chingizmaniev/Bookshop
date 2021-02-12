@@ -59,6 +59,6 @@ const Routes = () => {
 };
 
 const Home = () => <div><h2>Home</h2></div>
-// const Body = () => <div><h2>Body</h2></div>
+const Header = () => <div><h2>Header</h2></div>
 
 export default Routes;
