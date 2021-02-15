@@ -24,7 +24,7 @@ import ProductsContextProvider from './contexts/ProductsContext';
 const Routes = () => {
     return (
         <div>
-            <HashRouter>
+            <HashRouter >
                 <ProductsContextProvider>
                     <Switch>
                         <Route exact path="/body" component={Body} />
