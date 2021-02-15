@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Bookshop/static/css/main.af946fd5.chunk.css",
-    "main.js": "/Bookshop/static/js/main.b68f0875.chunk.js",
-    "main.js.map": "/Bookshop/static/js/main.b68f0875.chunk.js.map",
+    "main.js": "/Bookshop/static/js/main.6500a25e.chunk.js",
+    "main.js.map": "/Bookshop/static/js/main.6500a25e.chunk.js.map",
     "runtime-main.js": "/Bookshop/static/js/runtime-main.99a6fb9a.js",
     "runtime-main.js.map": "/Bookshop/static/js/runtime-main.99a6fb9a.js.map",
     "static/css/2.080cc412.chunk.css": "/Bookshop/static/css/2.080cc412.chunk.css",
-    "static/js/2.93e1b649.chunk.js": "/Bookshop/static/js/2.93e1b649.chunk.js",
-    "static/js/2.93e1b649.chunk.js.map": "/Bookshop/static/js/2.93e1b649.chunk.js.map",
+    "static/js/2.c8ee9434.chunk.js": "/Bookshop/static/js/2.c8ee9434.chunk.js",
+    "static/js/2.c8ee9434.chunk.js.map": "/Bookshop/static/js/2.c8ee9434.chunk.js.map",
     "index.html": "/Bookshop/index.html",
     "static/css/2.080cc412.chunk.css.map": "/Bookshop/static/css/2.080cc412.chunk.css.map",
     "static/css/main.af946fd5.chunk.css.map": "/Bookshop/static/css/main.af946fd5.chunk.css.map",
-    "static/js/2.93e1b649.chunk.js.LICENSE.txt": "/Bookshop/static/js/2.93e1b649.chunk.js.LICENSE.txt",
+    "static/js/2.c8ee9434.chunk.js.LICENSE.txt": "/Bookshop/static/js/2.c8ee9434.chunk.js.LICENSE.txt",
     "static/media/Logofooter.1e2cb12f.png": "/Bookshop/static/media/Logofooter.1e2cb12f.png",
     "static/media/Header.css": "/Bookshop/static/media/bg.15c8b4da.jpg",
     "static/media/carouselBody.ad72b81b.jpg": "/Bookshop/static/media/carouselBody.ad72b81b.jpg",
@@ -32,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.99a6fb9a.js",
     "static/css/2.080cc412.chunk.css",
-    "static/js/2.93e1b649.chunk.js",
+    "static/js/2.c8ee9434.chunk.js",
     "static/css/main.af946fd5.chunk.css",
-    "static/js/main.b68f0875.chunk.js"
+    "static/js/main.6500a25e.chunk.js"
   ]
 }
