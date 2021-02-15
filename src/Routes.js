@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AdminPanel from './container/AdminPanel/AdminPanel';
 import AdminPanelAdd from './container/AdminPanel/AdminPanelAdd';
 import AdminPanelEdit from './container/AdminPanel/AdminPanelEdit';
@@ -24,7 +24,7 @@ import ProductsContextProvider from './contexts/ProductsContext';
 const Routes = () => {
     return (
         <div>
-            <HashRouter >
+            <BrowserRouter basename={process.env.PUBLIC_URL} >
                 <ProductsContextProvider>
                     <Switch>
                         <Route exact path="/body" component={Body} />
@@ -53,7 +53,7 @@ const Routes = () => {
                     </Switch>
                 </AuthContextProvider>
                 <Footer />
-            </HashRouter>
+            </BrowserRouter>
         </div>
     );
 };
